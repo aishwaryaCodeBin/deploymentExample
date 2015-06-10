@@ -1,0 +1,19 @@
+$yellow1: #f1d201;
+$black1: #292a30;
+$black2: #292a2e;
+$black3: #2a2710;
+$black4: #675d19;
+$textColor1: #ffffff;
+$optionBgColor: #fff;
+body{
+  background: $black1;
+}
+#top-nav nav{
+background-color: $yellow1;
+}
+h1, h1, h3, h4, h5, h6, p{
+  color: $textColor1;
+}
+.q-option{
+background: $optionBgColor;
+}

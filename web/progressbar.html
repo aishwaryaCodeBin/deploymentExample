@@ -1,0 +1,28 @@
+
+
+
+
+<div class="skill">
+    <button>Show value</button>
+    <div class="outer">
+        <div class="inner" data-progress="57%"></div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+	
+	$('.skill').on('click', 'button', function () {
+    var skillBar = $(this).siblings().find('.inner');
+    var skillVal = skillBar.attr("data-progress");
+    $(skillBar).animate({
+        height: skillVal
+    }, 1500, function(){
+        alert('animation completed');
+    });
+});
+</script>
+
+<h1>Progress bar</h1>
+

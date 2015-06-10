@@ -1,0 +1,86 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+.outer {
+    width: 7px;
+    height: 190px;
+    overflow: hidden;
+    position: relative;
+}
+.inner {
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    position: absolute;
+    border: 0px solid #999;
+    border-top-width: 0;
+    background-color: #999;
+    bottom: 0;
+    height: 0%;
+}
+img{
+    max-width: 100%;
+}
+.icon-block {
+    padding: 0 15px;
+}
+
+/* Sidebar */
+.progress.large{
+    height: 7px;
+}
+.progress.x-large{
+    height: 11px;
+}
+.progress.large .determinate{
+}
+.slider .indicators {
+    position: static !important;
+}
+.slider .indicators .indicator-item.active{
+    background-color: rgba(0, 149, 135, 0.83);
+}
+.slider .slides{
+    position: relative !important;
+    top: 10px;
+    background: transparent;
+}
+.side-progress-section{
+    max-height: 190px;
+    overflow-y: scroll;
+}
+
+/* main page */
+.overall-progress-box{
+}
+
+.critical-suggestion-box {
+}
+
+.critical-progress-box {
+}
+
+.collection .collection-item.avatar {
+    height: 60px;
+}
+
+#progressStep {
+    height: 100px;
+}
+
+
+/* Quiz Page */
+.q-option{
+}
+
+.q-option.card .card-content .card-title{
+    line-height: 120% !important;
+    width: 100%;
+}
+.valign{
+    width: 100%;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="skoolersApp">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Starter Template - Skoolers</title>
+
+    <!-- CSS  -->
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/init.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+<div class="row">
+    <div class="navbar-fixed" id="top-nav">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo col s1"><img src="img/skoolers-logo-temp1.png" alt="" style="max-width: 75%;"/></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="">Sass</a></li>
+                    <li><a href="">Components</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+<div class="row">
+    <div class="col s3">
+        <div class="side-section">
+            <img src="img/profile.jpg" alt=""/>
+
+            <div class="progress large grey lighten-3">
+                <div class="determinate teal" style="width: 70%"></div>
+            </div>
+            <div class="sider-nav">
+                <div class="slider">
+                    <ul class="slides">
+                        <li class="center">
+                            <div id="topic-progress" class="side-progress-section">
+                                <p>Organic Compounds</p>
+
+                                <div class="progress grey lighten-2">
+                                    <div class="determinate red" style="width: 10%"></div>
+                                </div>
+
+                                <p>Native Graphene</p>
+
+                                <div class="progress grey lighten-2">
+                                    <div class="determinate orange" style="width: 50%"></div>
+                                </div>
+
+                                <p>Quantum Mechanics</p>
+
+                                <div class="progress grey lighten-2">
+                                    <div class="determinate green" style="width: 70%"></div>
+                                </div>
+
+                                <p>Another Topic</p>
+
+                                <div class="progress grey lighten-2">
+                                    <div class="determinate green" style="width: 77%"></div>
+                                </div>
+                            </div>
+                            <i class="mdi-action-polymer grey-text small"></i>
+
+                            <div id="exam-progress" class="side-progress-section">
+                                <p>JEE</p>
+
+                                <div class="progress green lighten-4">
+                                    <div class="determinate red" style="width: 10%"></div>
+                                </div>
+
+                                <p>AIEEE</p>
+
+                                <div class="progress green lighten-4">
+                                    <div class="determinate orange" style="width: 50%"></div>
+                                </div>
+
+                                <p>CBSE Part II</p>
+
+                                <div class="progress green lighten-4">
+                                    <div class="determinate green" style="width: 70%"></div>
+                                </div>
+
+                                <p>BFIX</p>
+
+                                <div class="progress green lighten-4">
+                                    <div class="determinate green" style="width: 70%"></div>
+                                </div>
+                                <br/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col s9">
+        <div id="main">
+            <div class="col s8 offset-s2"><!-- Step Progress Bar Here-->
+                <h5 class="center-align">Next Step : Revise</h5>
+                <div class="progress x-large grey lighten-3">
+                    <div class="determinate teal tooltipped" data-position="right" data-delay="50" data-tooltip="70% Complete" style="width: 70%"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 overall-progress-box" ng-controller="graphCtrl1">
+                    <linechart data="data" options="options" mode="" width="" height="300"></linechart>
+                </div>
+                <div class="col s6 critical-progress-box" ng-controller="graphCtrl2">
+                    <h5 class="right-align">Critical Progress</h5>
+                    <linechart data="data" options="options" mode="" width="" height="300"></linechart>
+                </div>
+                <div class="col s6 critical-suggestion-box">
+                    <h5 class="right-align">Recommended For You</h5>
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <img src="img/icon-organic.png" alt="" class="circle">
+                            <span class="title"><a href="#">Grignards Reagent in Detail</a></span>
+
+                            <p>A practical guide to R-MGX</p>
+                            <a href="#!" class="secondary-content"><i class="mdi-action-done-all"></i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <img src="img/icon_FX.png" alt="" class="circle">
+                            <span class="title"><a href="">Forex Trading</a></span>
+
+                            <p>Why $ is the King of currency</p>
+                            <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="mdi-action-account-balance circle teal"></i>
+                            <span class="title"><a href="">Accounting for Bitcoins</a></span>
+
+                            <p>First Line </p>
+                            <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="mdi-action-account-balance circle teal"></i>
+                            <span class="title"><a href="">Accounting for Bitcoins</a></span>
+
+                            <p>First Line </p>
+                            <a href="#!" class="secondary-content"><i class="mdi-action-grade"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer class=""></footer>
+        </div>
+    </div>
+    <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large red">
+            <i class="large mdi-editor-mode-edit"></i>
+        </a>
+        <ul>
+            <li><a class="btn-floating red"><i class="large mdi-editor-insert-chart"></i></a></li>
+            <li><a class="btn-floating yellow darken-1"><i class="large mdi-editor-format-quote"></i></a></li>
+        </ul>
+    </div>
+
+</div>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+<script src="js/angular-route.js"></script>
+<script src="js/d3.js"></script>
+<script src="js/line-chart.min.js"></script>
+<script src="js/jquery.nicescroll.js"></script>
+
+
+<script src="js/materialize.js"></script>
+<script src="js/main-controller.js"></script>
+<script src="js/init.js"></script>
+<script>
+
+</script>
+</body>
+</html>

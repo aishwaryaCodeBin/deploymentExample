@@ -1,0 +1,6 @@
+Nice scroll :
+http://areaaperta.com/nicescroll/
+
+progress-step-bar
+https://github.com/mateagar/progressStep
+
